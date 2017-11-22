@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import md5 from 'md5';
 
+
 class App extends Component {
 
   constructor() {
@@ -29,12 +30,16 @@ class App extends Component {
           hero: { heroes.length > 0 ? heroes[0].name : ""}
         </p>
         <img
-          src = { heroes.length > 0 ? heroes[0].thumbnail.path+'.'+heroes[0].thumbnail.extension : ""}
-          width="50%"
-          height="50%"
+          src = { heroes.length > 0 ? heroes[0].thumbnail.path+'.'+heroes[0].thumbnail.extension : 'https://media.giphy.com/media/3oriOiizS4Pmofj46A/giphy.gif'}
+          width="20%"
+          height="20%"
           >
         </img>
-
+        <p>
+          <button onClick={() => this.handleClick()}>
+            refresh
+          </button>
+        </p>
       </div>
     );
   }
@@ -64,7 +69,7 @@ class App extends Component {
       .then((res) => {
         // console.log(res.data.data.results);
         // console.log(res.data.data.results[0].thumbnail);
-        if(res.data.data.results[0].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available"){
+        if(res.data.data.results[0].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708"){
 
           this.setState({
             response: res.data.data.results
@@ -80,32 +85,13 @@ class App extends Component {
 
   }
 
-  handleChange(event) {
-    this.setState({
-      searchText: event.target.value
-    });
-  }
-
   handleClick() {
-
-    const configuration = {
-      params: {
-        apiKey: '6d994fb3',
-        t: this.state.searchText
-      }
-    }
-
-    axios
-      .get('http://www.omdbapi.com/', configuration)
-      .then(res => {
-        console.log(res);
-        this.setState({
-          response: res.data
-        });
-      })
-      .catch(error => console.log(error))
+    // this.componentDidMount();
+    document.location.reload()();
 
   }
+
+
 }
 
 export default App;
