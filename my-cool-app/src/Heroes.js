@@ -3,7 +3,7 @@ import axios from 'axios';
 import md5 from 'md5';
 
 
-class App extends Component {
+class Heroes extends Component {
 
   constructor() {
     super();
@@ -94,4 +94,4 @@ class App extends Component {
 
 }
 
-export default App;
+export default Heroes;
