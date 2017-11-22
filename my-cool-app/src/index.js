@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Heroes from './Heroes';
+import Heroes from './heroes';
+import "./heroes.css";
 
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-      <div>
+      <div
+      	class="heroBigContainer"
+      >
       		<Heroes />
       		<Heroes />
       </div>

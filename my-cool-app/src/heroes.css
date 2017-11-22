@@ -1,0 +1,122 @@
+@font-face {
+	font-family: benton-sans;
+	src: url("./Fonts/bentonsansextracompblack/BentonSans ExtraComp Black.otf") format("opentype");
+}
+
+
+.heroBigContainer {
+	font-family: benton-sans;
+	text-align: center;
+	margin-top: 5em;
+	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: center;
+}
+
+.textStyle {
+	display: inline-block;
+	width: 100%;
+	font-size: 2.6em;
+	margin: 0.5em 0;
+	color: #BB1E08;
+}
+
+.buttonStyle {
+	display: block;
+	margin: 0;
+	margin-top: 1em;
+}
+
+.buttonSize {
+	font-size: 1em;
+	background-color: #BB1E08;
+	color: gold;
+}
+
+.heroContainer {
+	margin: 5em 0;
+	width: 50%;
+}
+
+.imgStyle {
+	margin: 1em 0;
+  	width: 35em;
+  	height: 35em;
+ 	flex-basis: content;
+	border-width: 0.2em;
+	border-style: double;
+}
+
+@media (min-width: 1025px) and (max-width: 1366px){
+	.imgStyle {
+	  	width: 33em;
+  		height: 33em;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+	.imgStyle {
+	  	width: 30em;
+  		height: 30em;
+	}
+
+	.textStyle {
+		font-size: 2.3em;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 768px){
+	.imgStyle {
+	  	width: 22em;
+  		height: 22em;
+	}
+
+	.textStyle {
+		font-size: 1.7em;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 640px){
+	.imgStyle {
+	  	width: 18em;
+  		height: 18em;
+	}
+
+	.textStyle {
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 480px){
+	.imgStyle {
+	  	width: 13em;
+  		height: 13em;
+	}
+
+	.textStyle {
+		font-size: 0.9em;
+	}
+
+	.buttonSize {
+		font-size: 0.8em;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 400px){
+	.imgStyle {
+		/* margin: 1em 0; */
+	  	width: 10em;
+  		height: 10em;
+	}
+
+	.textStyle {
+		font-size: 0.8em;
+	}
+
+	.buttonSize {
+		font-size: 0.7em;
+	}
+}
+
+
+

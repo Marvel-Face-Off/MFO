@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import md5 from 'md5';
+import "./heroes.css";
 
 
 class Heroes extends Component {
@@ -22,22 +23,29 @@ class Heroes extends Component {
     // console.log(heroes);
 
     return (
-      <div>
+      <div
+        class="heroContainer"
+      >
         <h3>
           {this.state.searchText}
         </h3>
-        <p>
-          hero: { heroes.length > 0 ? heroes[0].name : ""}
+        <p
+          class="textStyle"
+        >
+          { heroes.length > 0 ? heroes[0].name : ""}
         </p>
         <img
+          class="imgStyle"
           src = { heroes.length > 0 ? heroes[0].thumbnail.path+'.'+heroes[0].thumbnail.extension : 'https://media.giphy.com/media/3oriOiizS4Pmofj46A/giphy.gif'}
-          width="20%"
-          height="20%"
           >
         </img>
-        <p>
-          <button onClick={() => this.handleClick()}>
-            refresh
+        <p
+          class="buttonStyle"
+        >
+          <button 
+            class="buttonSize"
+            onClick={() => this.handleClick()}>
+            Refresh
           </button>
         </p>
       </div>
@@ -87,7 +95,7 @@ class Heroes extends Component {
 
   handleClick() {
     // this.componentDidMount();
-    document.location.reload()();
+    // document.location.reload()();
 
   }
 
