@@ -11,7 +11,6 @@ class Heroes extends Component {
 
     // initial default state
     this.state = {
-      searchText: '',
       response: []
     };
 
@@ -24,29 +23,26 @@ class Heroes extends Component {
 
     return (
       <div
-        class="heroContainer"
+        className="heroContainer"
+        onClick={() => this.handleClick()}
       >
         <h3>
           {this.state.searchText}
         </h3>
         <p
-          class="textStyle"
+          className="textStyle"
         >
           { heroes.length > 0 ? heroes[0].name : ""}
         </p>
         <img
-          class="imgStyle"
+          className="imgStyle"
           src = { heroes.length > 0 ? heroes[0].thumbnail.path+'.'+heroes[0].thumbnail.extension : 'https://media.giphy.com/media/3oriOiizS4Pmofj46A/giphy.gif'}
+          alt="loading heroes"
           >
         </img>
         <p
-          class="buttonStyle"
+          className="buttonStyle"
         >
-          <button 
-            class="buttonSize"
-            onClick={() => this.handleClick()}>
-            Refresh
-          </button>
         </p>
       </div>
     );
@@ -72,21 +68,18 @@ class Heroes extends Component {
     }
 
     axios
-
       .get('https://gateway.marvel.com:443/v1/public/characters',configuration)
       .then((res) => {
         // console.log(res.data.data.results);
         // console.log(res.data.data.results[0].thumbnail);
         if(res.data.data.results[0].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708"){
-
           this.setState({
             response: res.data.data.results
-
           });
       }
 
       else{
-        console.log('worked');
+        // console.log('worked');
         this.componentDidMount();
       }
       });
@@ -95,7 +88,7 @@ class Heroes extends Component {
 
   handleClick() {
     // this.componentDidMount();
-    // document.location.reload()();
+    document.location.reload();
 
   }
 
