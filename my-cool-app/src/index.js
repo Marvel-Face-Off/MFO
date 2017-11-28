@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Heroes from './Heroes';
 import Questions from './Questions';
-import "./heroes.css";
 import Header from './header.js';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -13,19 +12,21 @@ ReactDOM.render(
       <Header />
       <Questions />
       <div
-      	class="heroBigContainer"
+      	className="heroBigContainer"
       >
     		<Heroes />
     		<Heroes />
         	<div
-              class="buttonStyle"
+              className="buttonStyle"
           >
-              <button
+              {/*
+                <button
                   class="button2Size"
                   onClick={() => this.refreshClick()}
               >
                   Refresh
               </button>
+            */}
           </div>
       </div>
     </div>

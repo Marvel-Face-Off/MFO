@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./Questions.css";
 
 
 const questions = [
@@ -29,8 +30,10 @@ class Questions extends Component {
       // console.log(questions[random]);
 
       return (
-        <div>
-          <h1 className="textStyle">
+        <div
+          className="divAlign"
+        >
+          <h1 className="styler">
           {  questions[random]}
           </h1>
         </div>

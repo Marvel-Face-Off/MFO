@@ -21,18 +21,10 @@
    bottom: 0;
    left: 0;
    right: 0;
-   background-image: url('./images/avengers2.png');
+   background-image: url('./images/avengers.png');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
-}
-
-.textStyle {
-	display: inline-block;
-	width: 100%;
-	font-size: 2.6em;
-	margin: 0.5em 0;
-	color: #BB1E08;
 }
 
 .buttonStyle {
@@ -53,6 +45,12 @@
 	color: gold;
 }
 
+.textStyle {
+	color: #BB1E08;
+	font-size: 2.3em;
+	width: 100%;
+}
+
 
 .heroContainer {
 	margin: 0;
@@ -67,12 +65,18 @@
 	border-width: 0.2em;
 	border-style: double;
 	border-radius: 10px;
-	border-color: gold;
+	border-color: #ffc900;
 }
 
 .imgStyle:hover {
 	transform: scale(1.15);
 	transition: transform .25s ease;
+	background-color:#000;
+    opacity:0.6;
+}
+
+.checkMark:hover {
+    content: url('./images/checkmark.png')
 }
 
 @media (min-width: 1025px) and (max-width: 1366px){
@@ -86,10 +90,6 @@
 	.imgStyle {
 	  	width: 27em;
   		height: 27em;
-	}
-
-	.textStyle {
-		font-size: 2.3em;
 	}
 }
 

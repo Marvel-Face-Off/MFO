@@ -1,0 +1,19 @@
+@font-face {
+	font-family: benton-sans;
+	src: url("./Fonts/bentonsansextracompbold/BentonSans ExtraComp Bold.otf") format("opentype");
+}
+
+.divAlign {
+	text-align: center;
+}
+
+.styler {
+	font-family: serif;
+	display: inline-block;
+	font-size: 2em;
+	margin: 2em 0 0 0;
+	padding: 0.5em 0.8em;
+	color: #42E6F1;
+	background-color: rgba(10, 100, 154, 0.7);
+	border-radius: 10px;
+}

@@ -24,32 +24,33 @@ class Heroes extends Component {
     return (
       <div
         className="heroContainer"
-        onClick={() => this.handleClick()}
       >
-        <div class="mfoBackground"></div>
+        <div
+            className="mfoBackground"
+        >
+        </div>
         <h3>
-          {this.state.searchText}
+            {this.state.searchText}
         </h3>
         <p
-          className="textStyle"
+            className="textStyle"
         >
-          { heroes.length > 0 ? heroes[0].name : ""}
+            { heroes.length > 0 ? heroes[0].name : ""}
         </p>
         <img
-          className="imgStyle"
-          src = { heroes.length > 0 ? heroes[0].thumbnail.path+'.'+heroes[0].thumbnail.extension : 'https://media.giphy.com/media/3oriOiizS4Pmofj46A/giphy.gif'}
-          alt="loading heroes"
-          >
-        </img>
-        <p
-          className="buttonStyle"
+            className="imgStyle"
+            src = { heroes.length > 0 ? heroes[0].thumbnail.path+'.'+heroes[0].thumbnail.extension : 'https://media.giphy.com/media/3oriOiizS4Pmofj46A/giphy.gif'}
+            alt="loading heroes"
+            onClick={() => this.handleClick()}
         >
-          <button 
-            class="buttonSize"
-            onClick={() => this.handleClick()}>
+        </img>
+        {/*
+        <p className="buttonStyle">
+          <button
+            className="buttonSize"
             Change
           </button>
-        </p>
+        </p>*/}
       </div>
     );
   }
@@ -95,12 +96,12 @@ class Heroes extends Component {
     }
 
     handleClick() {
-        this.componentDidMount();
+        // this.componentDidMount();
+        document.location.reload()();
     }
 
     // refreshClick() {
     //     console.log('its this:', this);
-    //     document.location.reload()();
     // }
 
 
