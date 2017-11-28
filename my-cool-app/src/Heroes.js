@@ -26,6 +26,7 @@ class Heroes extends Component {
         className="heroContainer"
         onClick={() => this.handleClick()}
       >
+        <div class="mfoBackground"></div>
         <h3>
           {this.state.searchText}
         </h3>
@@ -43,54 +44,65 @@ class Heroes extends Component {
         <p
           className="buttonStyle"
         >
+          <button 
+            class="buttonSize"
+            onClick={() => this.handleClick()}>
+            Change
+          </button>
         </p>
       </div>
     );
   }
 
-  componentDidMount() {
-    let date = new Date();
-    let ts = date.getTime().toString();
-    let publickey = "3ebfa70440b616a86216298f97fa42ed";
-    let privatekey = "6ce518b1fc2eab73750129ec04048158fb930961";
-    let hash = md5(ts+privatekey+publickey);
-    let min = 0;
-    let max = 1490;
-    let random = Math.floor(Math.random() * (max - min + 1)) + min;
-    let configuration = {
-      params: {
-        offset: random,
-        limit: 1,
-        ts: ts,
-        apikey: publickey,
-        hash: hash
-      }
+    componentDidMount() {
+        let date = new Date();
+        let ts = date.getTime().toString();
+        let publickey = "3ebfa70440b616a86216298f97fa42ed";
+        let privatekey = "6ce518b1fc2eab73750129ec04048158fb930961";
+        let hash = md5(ts+privatekey+publickey);
+        let min = 0;
+        let max = 1490;
+        let random = Math.floor(Math.random() * (max - min + 1)) + min;
+        let configuration = {
+          params: {
+            offset: random,
+            limit: 1,
+            ts: ts,
+            apikey: publickey,
+            hash: hash
+          }
+        }
+
+        axios
+
+          .get('https://gateway.marvel.com:443/v1/public/characters',configuration)
+          .then((res) => {
+            // console.log(res.data.data.results);
+            // console.log(res.data.data.results[0].thumbnail);
+            if(res.data.data.results[0].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708" && "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708.gif"){
+
+              this.setState({
+                response: res.data.data.results
+
+              });
+          }
+
+          else{
+            console.log('worked');
+            this.componentDidMount();
+          }
+          });
     }
 
-    axios
-      .get('https://gateway.marvel.com:443/v1/public/characters',configuration)
-      .then((res) => {
-        // console.log(res.data.data.results);
-        // console.log(res.data.data.results[0].thumbnail);
-        if(res.data.data.results[0].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708"){
-          this.setState({
-            response: res.data.data.results
-          });
-      }
-
-      else{
-        // console.log('worked');
+    handleClick() {
         this.componentDidMount();
-      }
-      });
+    }
 
-  }
+    // refreshClick() {
+    //     console.log('its this:', this);
+    //     document.location.reload()();
+    // }
 
-  handleClick() {
-    // this.componentDidMount();
-    document.location.reload();
-
-  }
 
 
 }

@@ -1,0 +1,113 @@
+@font-face {
+	font-family: benton-sans;
+	src: url("./Fonts/bentonsansextracompbold/BentonSans ExtraComp Bold.otf") format("opentype");
+}
+
+nav {
+	font-family: benton-sans;
+	display: flex;
+  	flex-flow: column wrap;
+  	justify-content: center;
+  	height: 4em;
+  	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+.ulStyle {
+	list-style-type: none;
+	display: block;
+	/* text-align: center; */
+}
+
+.liStyle {
+	vertical-align: middle;
+	display: inline-block;
+	width: 5em;
+  	/* height: 5em; */
+ 	flex-basis: content;
+	color: gold;
+	font-size: 3em;
+}
+
+/* Wobble Horizontal Effect*/
+@-webkit-keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.logo {
+	content: url('./images/MFO.png');
+	border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    margin-right: 2em;
+   	-webkit-transform: perspective(1px) translateZ(0);
+  	transform: perspective(1px) translateZ(0);
+  	box-shadow: 0 0 1px transparent;
+}
+
+
+
+.transform:hover, .transform:focus, .transform:active {
+  	-webkit-animation-name: hvr-wobble-horizontal;
+  	animation-name: hvr-wobble-horizontal;
+  	-webkit-animation-duration: 1s;
+  	animation-duration: 1s;
+  	-webkit-animation-timing-function: ease-in-out;
+  	animation-timing-function: ease-in-out;
+  	-webkit-animation-iteration-count: 1;
+  	animation-iteration-count: 1;
+}
+
+.hover:hover {
+	transform: scale(1.4);
+	transition: transform .25s ease;
+}

@@ -4,19 +4,30 @@ import './index.css';
 import Heroes from './Heroes';
 import Questions from './Questions';
 import "./heroes.css";
+import Header from './header.js';
 
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <div>
-
-          <Questions />
-          <div
-          	className="heroBigContainer"
+      <Header />
+      <Questions />
+      <div
+      	class="heroBigContainer"
+      >
+    		<Heroes />
+    		<Heroes />
+        	<div
+              class="buttonStyle"
           >
-          		<Heroes />
-          		<Heroes />
+              <button
+                  class="button2Size"
+                  onClick={() => this.refreshClick()}
+              >
+                  Refresh
+              </button>
           </div>
+      </div>
     </div>
   ,document.getElementById('root'));
 registerServiceWorker();

@@ -5,12 +5,26 @@
 
 
 .heroBigContainer {
+	margin-top: 1em;
 	font-family: benton-sans;
 	text-align: center;
-	margin-top: 5em;
+	/* margin-top: 5em; */
 	display: flex;
   	flex-flow: row wrap;
   	justify-content: center;
+}
+
+.mfoBackground {
+   position: fixed;
+   z-index: -3;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-image: url('./images/avengers2.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
 }
 
 .textStyle {
@@ -33,31 +47,45 @@
 	color: gold;
 }
 
+.button2Size {
+	font-size: 2em;
+	background-color: #0859BB;
+	color: gold;
+}
+
+
 .heroContainer {
-	margin: 5em 0;
+	margin: 0;
 	width: 50%;
 }
 
 .imgStyle {
 	margin: 1em 0;
-  	width: 35em;
-  	height: 35em;
+  	width: 32em;
+  	height: 32em;
  	flex-basis: content;
 	border-width: 0.2em;
 	border-style: double;
+	border-radius: 10px;
+	border-color: gold;
+}
+
+.imgStyle:hover {
+	transform: scale(1.15);
+	transition: transform .25s ease;
 }
 
 @media (min-width: 1025px) and (max-width: 1366px){
 	.imgStyle {
-	  	width: 33em;
-  		height: 33em;
+	  	width: 29em;
+  		height: 29em;
 	}
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
 	.imgStyle {
-	  	width: 30em;
-  		height: 30em;
+	  	width: 27em;
+  		height: 27em;
 	}
 
 	.textStyle {
@@ -67,8 +95,8 @@
 
 @media (min-width: 641px) and (max-width: 768px){
 	.imgStyle {
-	  	width: 22em;
-  		height: 22em;
+	  	width: 19em;
+  		height: 19em;
 	}
 
 	.textStyle {
@@ -78,8 +106,8 @@
 
 @media (min-width: 481px) and (max-width: 640px){
 	.imgStyle {
-	  	width: 18em;
-  		height: 18em;
+	  	width: 15em;
+  		height: 15em;
 	}
 
 	.textStyle {
@@ -89,8 +117,8 @@
 
 @media (min-width: 401px) and (max-width: 480px){
 	.imgStyle {
-	  	width: 13em;
-  		height: 13em;
+	  	width: 10em;
+  		height: 10em;
 	}
 
 	.textStyle {
@@ -105,8 +133,8 @@
 @media (min-width: 320px) and (max-width: 400px){
 	.imgStyle {
 		/* margin: 1em 0; */
-	  	width: 10em;
-  		height: 10em;
+	  	width: 7em;
+  		height: 7em;
 	}
 
 	.textStyle {
