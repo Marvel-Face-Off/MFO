@@ -8,15 +8,12 @@ const questions = [
   'If facing head to head, which one would win?',
   'Which character would you consider the coolest one (not in the literal sense)?',
   'Who would you chose as a drinking buddy and why?',
-  'Which power would you rather have and why?',
-  "test",
-  "test1",
-  "test2"
+  'Which power would you rather have and why?'
 
 ];
 
 let min = 0;
-let max = 4;
+let max = questions.length-1;
 let random = Math.floor(Math.random() * (max - min + 1)) + min;
 
 
