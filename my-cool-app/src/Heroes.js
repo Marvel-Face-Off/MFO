@@ -97,7 +97,7 @@ class Heroes extends Component {
 
     handleClick() {
         // this.componentDidMount();
-        document.location.reload()();
+        document.location.reload();
     }
 
     // refreshClick() {
