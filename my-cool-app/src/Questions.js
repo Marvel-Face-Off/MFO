@@ -8,7 +8,14 @@ const questions = [
   'If facing head to head, which one would win?',
   'Which character would you consider the coolest one (not in the literal sense)?',
   'Who would you chose as a drinking buddy and why?',
-  'Which power would you rather have and why?'
+  'Which power would you rather have and why?',
+  'Which costume would you look good in?',
+  'Who is the most "realistic"?',
+  'Who would you rather fight?',
+  'Who would you follow on social media?',
+  'Who would you rather bring home with you?',
+  'Who has the best design?',
+  'Who is the most well know?'
 
 ];
 
