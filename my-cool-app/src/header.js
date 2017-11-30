@@ -35,6 +35,7 @@ class Header extends Component {
 
 					<img
 						className="liStyle gifStyle"
+						alt="Captain America Shield GIF"
 					/>
 				</ul>
 			</nav>
