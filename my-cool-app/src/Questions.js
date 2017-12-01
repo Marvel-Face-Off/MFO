@@ -15,7 +15,7 @@ const questions = [
   'Who would you follow on social media?',
   'Who would you rather bring home with you?',
   'Who has the best design?',
-  'Who is the most well know?'
+  'Who is the most well known?'
 
 ];
 

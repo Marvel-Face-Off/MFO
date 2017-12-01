@@ -5,5 +5,5 @@ import Home from './home'
 
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render( <Home />, document.getElementById('root'));
+ReactDOM.render( <FaceOff />, document.getElementById('root'));
 registerServiceWorker();
