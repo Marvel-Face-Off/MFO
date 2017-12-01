@@ -59,8 +59,8 @@
 
 .imgStyle {
 	margin: 1em 0;
-  	width: 32em;
-  	height: 32em;
+  	width: 28em;
+  	height: 28em;
  	flex-basis: content;
 	border-width: 0.2em;
 	border-style: double;
@@ -81,22 +81,22 @@
 
 @media (min-width: 1025px) and (max-width: 1366px){
 	.imgStyle {
-	  	width: 29em;
-  		height: 29em;
+	  	width: 25em;
+  		height: 25em;
 	}
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
 	.imgStyle {
-	  	width: 27em;
-  		height: 27em;
+	  	width: 23em;
+  		height: 23em;
 	}
 }
 
 @media (min-width: 641px) and (max-width: 768px){
 	.imgStyle {
-	  	width: 19em;
-  		height: 19em;
+	  	width: 15em;
+  		height: 15em;
 	}
 
 	.textStyle {
@@ -106,8 +106,8 @@
 
 @media (min-width: 481px) and (max-width: 640px){
 	.imgStyle {
-	  	width: 15em;
-  		height: 15em;
+	  	width: 11em;
+  		height: 11em;
 	}
 
 	.textStyle {
@@ -117,8 +117,8 @@
 
 @media (min-width: 401px) and (max-width: 480px){
 	.imgStyle {
-	  	width: 10em;
-  		height: 10em;
+	  	width:36em;
+  		height:36em;
 	}
 
 	.textStyle {

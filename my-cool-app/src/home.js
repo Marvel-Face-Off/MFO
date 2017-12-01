@@ -8,56 +8,75 @@ class Home extends Component {
 		super()
 
 		this.state = {
-			isPlaying: false,
-			hideOverlay: true
+			hideOverlay: true,
+			playbackState: YoutubePlayer.stateNames[1]
 		}
 	}
 	render() {
-		var videoSrc="https://www.youtube.com/embed/a1vWUe83LsQ?&allowfullscreen"
 		return(
 			<div
 				className="container"
 			>
-				<div className="innerContainer">
+				<div className={this.state.hideOverlay ? "innerContainer" : "innerContainerFade"}>
 					<YoutubePlayer
 						videoId='a1vWUe83LsQ'
 						className="player"
-	  					playbackState='unstarted'
+						playbackState={this.state.playbackState}
+	  					onPause={() => this.handlePause()}
+	  					onPlay={() => this.handlePlay()}
 	  					configuration={
 	  						{
-	  							autoplay: 1,
 	  							loop: 1,
 	  							rel: 0,
 	  							showinfo: 0,
 	  							controls: 0,
 	  							modestbranding: 1,
-	  							frameBorder: 0
+	  							frameBorder: 0,
+	  							allowfullscreen: true
 	  						}
 	  					}
-	  					onClick={(event) => this.videoEnd(event)}
 					/>
+				</div>
+				<div
+					className={this.state.hideOverlay ? "overlayHide" : "overlayShow"}
+					// onClick={this.toggleOverlay()}
+				>
+					<div
+						className="playClick"
+					>
+						Play
+					</div>
+					<div
+						className="introClick"
+						onClick={() => this.handlePlay()}
+					>
+						Intro
+					</div>
 				</div>
 			</div>
 		)
 	}
 
-	componentDidMount() {
-
+	handlePlay() {
+		console.log(YoutubePlayer.defaultProps)
+		this.setState({
+			playbackState: YoutubePlayer.stateNames[1]
+		}, () => console.log(`Video Paused ${this.state.playbackState}`))
+		this.setState({
+			hideOverlay: true
+		}, () => console.log(`Overlay Hidden: ${this.state.hideOverlay}`))
 	}
 
-	componentWillReceiveProps() {
-		
+	handlePause() {
+		this.setState({
+			playbackState: YoutubePlayer.stateNames[2]
+		}, () => console.log(`Video Paused ${this.state.playbackState}`))
+		this.setState({
+			hideOverlay: false
+		}, () => console.log(`Overlay Hidden: ${this.state.hideOverlay}`))
 	}
-
-	videoEnd(event) {
-		console.log(event)
-		if(event.data == 1){
-			this.setState(currentState =>({
-				isPlaying: !currentState.isPlaying,
-			}, () => console.log(`Video is playing = ${this.state.isPlaying}`)))
-		}
-	}
-
 }
+
+
 
 export default Home;
