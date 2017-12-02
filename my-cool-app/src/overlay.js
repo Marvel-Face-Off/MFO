@@ -26,7 +26,7 @@ class Overlay extends Component {
 					from the marvel universe and answer the question presented above
 					the two choices. The player must chose a character to the best
 					of their ability and should explain their choice. After answering
-					the question, the player's turn is over and can chose the next person. 
+					the question, the player turn is over and can chose the next person. 
 				</p>
 				<img className="image1" />
 				<button className="hover button" onClick={() => this.quickHide()}> Next </button>
