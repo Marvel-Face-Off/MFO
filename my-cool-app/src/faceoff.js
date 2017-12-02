@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Heroes from './Heroes';
 import Questions from './Questions';
 import Header from './header.js';
+import Overlay from './overlay.js';
 
 class FaceOff extends Component {
   render() {
     return(
 
   <div>
+  		<Overlay />
         <Header />
         <Questions />
         <div
