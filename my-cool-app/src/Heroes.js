@@ -29,9 +29,6 @@ class Heroes extends Component {
             className="mfoBackground"
         >
         </div>
-        <h3>
-            {this.state.searchText}
-        </h3>
         <p
             className="textStyle"
         >
