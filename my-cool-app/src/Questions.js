@@ -7,7 +7,7 @@ const questions = [
   'Which character is hotter and why (mandatory)?',
   'If facing head to head, which one would win?',
   'Which character would you consider the coolest one (not in the literal sense)?',
-  'Who would you chose as a drinking buddy and why?',
+  'Who would you choose as a drinking buddy and why?',
   'Which power would you rather have and why?',
   'Which costume would you look good in?',
   'Who is the most "realistic"?',
