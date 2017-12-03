@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './home';
 import FaceOff from './faceoff';
+import Overlay from './overlay';
 
 class App extends Component{
 
@@ -13,6 +14,11 @@ class App extends Component{
 		        path="/"
 		        component={Home}
 		      />
+					<Route
+						exact
+						path="/overlay"
+						component={Overlay}
+					/>
 		      <Route
 		        exact
 		        path="/home"

@@ -9,7 +9,7 @@ class FaceOff extends Component {
     return(
 
       <div>
-  		  <Overlay />
+
         <Header />
         <Questions />
         <div

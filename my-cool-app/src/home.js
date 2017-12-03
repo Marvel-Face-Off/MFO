@@ -3,6 +3,8 @@ import "./css/home.css";
 import YoutubePlayer from 'react-youtube-player';
 import Header from './header.js';
 import { Link } from 'react-router-dom';
+import Overlay from './overlay';
+
 
 
 class Home extends Component {
@@ -46,11 +48,25 @@ class Home extends Component {
 				>
 					<div
 							className="hasBorder1"
-					>
-						<div
-							className="playClick"
 						>
-							<Link 
+							<div
+								className="instructionsClick"
+								>
+								<Link
+									to="/overlay"
+									className="linkStyle"
+									>
+									Instructions
+								</Link>
+							</div>
+						</div>
+							<div
+									className="hasBorder1 hasBorder2"
+							>
+									<div
+										className="playClick"
+									>
+							<Link
 								to="/faceoff"
 								className="linkStyle"
 							>
