@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import "./home.css";
+import "./css/home.css";
 import YoutubePlayer from 'react-youtube-player';
 import Header from './header.js';
+import { Link } from 'react-router-dom';
+
 
 class Home extends Component {
 	constructor() {
@@ -44,7 +46,12 @@ class Home extends Component {
 					<div
 						className="playClick"
 					>
-						Play
+						<Link 
+							to="/faceoff"
+							className="linkStyle"
+						>
+							Play
+						</Link>
 					</div>
 					<div
 						className="introClick"
@@ -56,6 +63,7 @@ class Home extends Component {
 			</div>
 		)
 	}
+
 
 	handlePlay() {
 		console.log(YoutubePlayer.defaultProps)
@@ -79,4 +87,4 @@ class Home extends Component {
 
 
 
-export default Home;
+export default Home

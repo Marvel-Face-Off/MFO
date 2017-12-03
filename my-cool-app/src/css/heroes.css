@@ -1,6 +1,6 @@
 @font-face {
 	font-family: benton-sans;
-	src: url("./Fonts/bentonsansextracompblack/BentonSans ExtraComp Black.otf") format("opentype");
+	src: url("../Fonts/bentonsansextracompblack/BentonSans ExtraComp Black.otf") format("opentype");
 }
 
 
@@ -21,7 +21,7 @@
    bottom: 0;
    left: 0;
    right: 0;
-   background-image: url('./images/avengers.png');
+   background-image: url('../images/avengers.png');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
@@ -76,7 +76,7 @@
 }
 
 .checkMark:hover {
-    content: url('./images/checkmark.png')
+    content: url('../images/checkmark.png')
 }
 
 @media (min-width: 1025px) and (max-width: 1366px){

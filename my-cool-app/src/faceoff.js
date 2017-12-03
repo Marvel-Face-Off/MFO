@@ -8,8 +8,8 @@ class FaceOff extends Component {
   render() {
     return(
 
-  <div>
-  		<Overlay />
+      <div>
+  		  <Overlay />
         <Header />
         <Questions />
         <div
@@ -30,7 +30,7 @@ class FaceOff extends Component {
               */}
             </div>
         </div>
-    </div>
+      </div>
     )
   }
 }

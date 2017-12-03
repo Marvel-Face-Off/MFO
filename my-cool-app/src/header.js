@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import "./header.css";
+import "./css/header.css";
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
 	constructor() {
@@ -25,12 +26,22 @@ class Header extends Component {
 					<li
 						className="liStyle hover"
 					>
-						Home
+						<Link
+							to="/"
+							className="linkStyle"
+						>
+							Home
+						</Link>
 					</li>
 					<li
 						className="liStyle hover"
 					>
-						Face Off
+						<Link
+							to="/faceoff"
+							className="linkStyle"
+						>
+							Face Off
+						</Link>
 					</li>
 
 					<img

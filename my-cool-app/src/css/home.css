@@ -68,3 +68,8 @@
   border-width: 0.2em;
   border-style: solid;
 }
+
+.linkStyle {
+  text-decoration: none;
+  color: white;
+}

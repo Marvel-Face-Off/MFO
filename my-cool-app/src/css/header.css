@@ -1,6 +1,6 @@
 @font-face {
 	font-family: benton-sans;
-	src: url("./Fonts/bentonsansextracompbold/BentonSans ExtraComp Bold.otf") format("opentype");
+	src: url("../Fonts/bentonsansextracompbold/BentonSans ExtraComp Bold.otf") format("opentype");
 }
 
 nav {
@@ -46,7 +46,7 @@ nav {
 .logo {
   display: inline-block;
   vertical-align: middle;
-	content: url('./images/MFO.png');
+	content: url('../images/MFO.png');
 	border-radius: 50%;
   height: 3em;
   width: 3em;
@@ -89,4 +89,9 @@ nav {
   vertical-align: center;
   width: 3.8em;
   height: 3.8em;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: white;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import md5 from 'md5';
-import "./heroes.css";
+import "./css/heroes.css";
 
 
 class Heroes extends Component {
