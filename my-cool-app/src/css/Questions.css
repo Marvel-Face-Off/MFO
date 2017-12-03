@@ -10,10 +10,40 @@
 .styler {
 	font-family: serif;
 	display: inline-block;
-	font-size: 2em;
-	margin: 0.5em 0 0 0;
+	font-size: 2.5em;
+	margin: 1.7em 0 0.5em 0;
 	padding: 0.5em 0.8em;
 	color: #42E6F1;
 	background-color: rgba(10, 100, 154, 0.7);
 	border-radius: 10px;
+}
+
+
+@media (min-width: 641px) and (max-width: 768px){
+	.styler {
+		font-size: 1.9em;
+		margin: 1em 0 0.5em 0;
+		
+	}
+}
+
+@media (min-width: 481px) and (max-width: 640px){
+	.styler {
+		font-size: 1.6em;
+		margin: 1em 0 0.5em 0;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 480px){
+	.styler {
+		font-size: 1.35em;
+		margin: 1em 0 0.5em 0;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 400px){
+	.styler {
+		font-size: 1em;
+		margin: 1em 0 0.5em 0;
+	}
 }

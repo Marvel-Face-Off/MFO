@@ -31,6 +31,7 @@ nav {
   padding: 0;
   margin-right: 35em;
 	margin-top: 3em;
+  margin-bottom: 0;
 }
 
 .liStyle {
@@ -79,17 +80,136 @@ nav {
 
 }
 
-.hover:hover {
-  transform: scale(1.4);
-	transition: transform .25s ease;
-}
-
 .gifStyle {
   content: url('https://media.giphy.com/media/l4FGmptEvk6S7273a/giphy.gif');
   vertical-align: center;
   width: 3.8em;
   height: 3.8em;
 }
+
+@media (min-width: 1025px) and (max-width: 1366px){
+  .logo {
+    height: 2.4em;
+    width: 2.4em;
+  }
+
+  .marginFix{
+    font-size: 2.6em;
+  }
+
+  #ulStyle {
+    margin-left: 2em;
+  }
+  .gifStyle {
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .logo {
+    height: 2.4em;
+    width: 2.4em;
+  }
+
+  .marginFix{
+    font-size: 2.2em;
+  }
+
+  #ulStyle {
+    margin-left: 2em;
+  }
+  .gifStyle {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px){
+  .logo {
+    height: 2.1em;
+    width: 2.1em;
+  }
+
+  .marginFix{
+    font-size: 2.3em;
+  }
+
+  #ulStyle {
+    margin-left: 3em;
+  }
+
+  .gifStyle {
+    width: 2.3em;
+    height: 2.3em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px){
+  .logo {
+    height: 1.9em;
+    width: 1.9em;
+  }
+
+  .marginFix{
+    font-size: 1.8em;
+  }
+
+  #ulStyle {
+    margin-left: 3em;
+  }
+
+  .gifStyle {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 480px){
+  .logo {
+    height: 1.7em;
+    width: 1.7em;
+  }
+
+  .marginFix{
+    font-size: 1.6em;
+  }
+
+  #ulStyle {
+    margin-left: 2em;
+  }
+
+  .gifStyle {
+    width: 1.7em;
+    height: 1.7em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 400px){
+  .logo {
+    height: 1.4em;
+    width: 1.4em;
+  }
+
+  .marginFix{
+    font-size: 1.3em;
+  }
+
+  #ulStyle {
+    margin-left: 2em;
+  }
+
+  .gifStyle {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+.hover:hover {
+  transform: scale(1.4);
+  transition: transform .25s ease;
+}
+
 
 .linkHeadStyle {
   text-decoration: none;

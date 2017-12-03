@@ -24,7 +24,7 @@ class Header extends Component {
 					id='ulStyle'
 				>
 					<li
-						className="liStyle hover"
+						className="liStyle hover marginFix"
 					>
 						<Link
 							to="/"
@@ -34,7 +34,7 @@ class Header extends Component {
 						</Link>
 					</li>
 					<li
-						className="liStyle hover"
+						className="liStyle hover marginFix"
 					>
 						<Link
 							to="/faceoff"
