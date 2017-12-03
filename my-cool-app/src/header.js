@@ -28,7 +28,7 @@ class Header extends Component {
 					>
 						<Link
 							to="/"
-							className="linkStyle"
+							className="linkHeadStyle"
 						>
 							Home
 						</Link>
@@ -38,7 +38,7 @@ class Header extends Component {
 					>
 						<Link
 							to="/faceoff"
-							className="linkStyle"
+							className="linkHeadStyle"
 						>
 							Face Off
 						</Link>

@@ -19,6 +19,7 @@ class Home extends Component {
 			<div
 				className="container"
 			>
+			<Header />
 				<div className={this.state.hideOverlay ? "innerContainer" : "innerContainerFade"}>
 					<YoutubePlayer
 						videoId='a1vWUe83LsQ'
@@ -44,20 +45,28 @@ class Home extends Component {
 					// onClick={this.toggleOverlay()}
 				>
 					<div
-						className="playClick"
+							className="hasBorder1"
 					>
-						<Link 
-							to="/faceoff"
-							className="linkStyle"
+						<div
+							className="playClick"
 						>
-							Play
-						</Link>
+							<Link 
+								to="/faceoff"
+								className="linkStyle"
+							>
+								Play
+							</Link>
+						</div>
 					</div>
 					<div
-						className="introClick"
-						onClick={() => this.handlePlay()}
+						className="hasBorder2"
 					>
-						Intro
+						<div
+							className="introClick"
+							onClick={() => this.handlePlay()}
+						>
+							Intro
+						</div>
 					</div>
 				</div>
 			</div>
