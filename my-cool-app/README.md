@@ -1,9 +1,9 @@
 
 # Marvel face Off
 
-A game where players must answer a random question with two random Marvel characters
+An icebreaker game where players must answer sets of random questions choosing between two random Marvel characters generated from the Marvel API
 
-## Installation
+## Local Installation
 
 ```bash
 $ git clone https://github.com/Marvel-Face-Off/MFO.git
