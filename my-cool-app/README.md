@@ -14,11 +14,10 @@ $ npm start
 
 ## Rules
 
-With a group of friends, you have to take turns answering a randomly selected
-question based on the the two random Marvel characters to appear. Click the character to make another role.
+With a group of friends, the personel playing can take turns answering a randomly selected
+question based on the the two random Marvel characters that appear. Once a character is clicked, the person playing can continue on or choose another group member to take his/her turn.
 
-If the two characters that appear are unknown, you are allowed to roll again but
-this does not apply to questions based on appearence. 
+If the two characters that appear are unknown, the person playing is allowed to roll again (this does not apply to questions based on appearence).
 
 ## Credits
 
