@@ -69,22 +69,23 @@
 
 .instructionsClick {
   display: block;
-  font-size: 9em;
-  padding-bottom: 0.25em;
+  font-size: 8em;
+  padding-bottom: 0.3em;
   letter-spacing: 0.05em;
 }
 
 .playClick {
   display: inline-block;
-  font-size: 9em;
-  padding-bottom: 0.25em;
+  font-size: 8em;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
   letter-spacing: 0.05em;
 }
 
 .introClick {
   display: inline-block;
-  font-size: 9em;
-  padding-top: 0.25em;
+  font-size: 8em;
+  padding-top: 0.3em;
   letter-spacing: 0.05em;
 }
 

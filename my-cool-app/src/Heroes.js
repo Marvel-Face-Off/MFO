@@ -75,9 +75,13 @@ class Heroes extends Component {
 
           .get('https://gateway.marvel.com:443/v1/public/characters',configuration)
           .then((res) => {
-            // console.log(res.data.data.results);
+            console.log(res.data.data);
             // console.log(res.data.data.results[0].thumbnail);
-            if(res.data.data.results[0].thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" && "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708" && "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708.gif"){
+            if(
+              res.data.data.results[0].thumbnail.path !==
+              "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" &&
+              "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708"
+              ){
 
               this.setState({
                 response: res.data.data.results
@@ -90,6 +94,13 @@ class Heroes extends Component {
             this.componentDidMount();
           }
           });
+
+      axios
+
+          .get('https://gateway.marvel.com:443/v1/public/characters/1009414',configuration)
+          .then((res) => {
+            console.log('this is res!', res.data)
+          })
     }
 
     handleClick() {
