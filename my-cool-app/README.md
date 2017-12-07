@@ -8,16 +8,16 @@ An icebreaker game where players must answer sets of random questions choosing b
 ```bash
 $ git clone https://github.com/Marvel-Face-Off/MFO.git
 $ cd MFO/my-cool-app/
-# install packages listed in the package.json
+$ npm install
 $ npm start
 ```
 
 ## Rules
 
-With a group of friends, the personel playing can take turns answering a randomly selected
+With a group of friends, the person playing can take turns answering a randomly selected
 question based on the the two random Marvel characters that appear. Once a character is clicked, the person playing can continue on or choose another group member to take his/her turn.
 
-If the two characters that appear are unknown, the person playing is allowed to roll again (this does not apply to questions based on appearence).
+If the two characters that appear are unknown, the person playing is allowed to roll again (this does not apply to questions based on appearance).
 
 ## Credits
 
