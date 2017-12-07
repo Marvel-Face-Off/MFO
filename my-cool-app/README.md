@@ -12,6 +12,10 @@ $ npm install
 $ npm start
 ```
 
+## Deployment
+
+http://marvelfaceoff.surge.sh/
+
 ## Rules
 
 With a group of friends, the person playing can take turns answering a randomly selected
