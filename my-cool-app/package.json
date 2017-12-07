@@ -2,6 +2,7 @@
   "name": "my-cool-app",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "dependencies": {
     "axios": "^0.17.1",
     "md5": "^2.2.1",
@@ -14,9 +15,13 @@
     "react-youtube-player": "^2.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "postinstall": "webpack -p"
   }
 }
+
+    // "start": "react-scripts start",
+    // "build": "react-scripts build",
+    // "test": "react-scripts test --env=jsdom",
+    // "eject": "react-scripts eject"
