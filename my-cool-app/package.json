@@ -19,8 +19,4 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "babel-preset-react-app": "^3.0.2",
-    "react-app-rewired": "^1.0.5"
-  }
 }
