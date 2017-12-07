@@ -3,7 +3,6 @@ import "./css/home.css";
 import YoutubePlayer from 'react-youtube-player';
 import Header from './header.js';
 import { Link } from 'react-router-dom';
-import Overlay from './overlay';
 
 
 

@@ -29,7 +29,7 @@ class Overlay extends Component {
 						of their ability and should explain why they made their choice. After answering
 						the question, the player's turn is over and can chose the next person to answer the next question.
 					</p>
-					<img className="image1" />
+					<img className="image1" alt="avengers image" />
 					<button
 						className="hover button"
 						onClick={() => this.quickHide()}>
@@ -48,7 +48,7 @@ class Overlay extends Component {
 				</div>
 
 				<div className={this.state.isShowing ? 'ruleHidder' : 'rule'}>
-					<img className="image2" />
+					<img className="image2" alt="deadpool" />
 					<p className="text2">
 						HOWEVER, if the person who is playing has no idea who both characters are, he or she is allowed
 						to make another roll. THIS RULE DOES NOT APPLY TO QUESTIONS
