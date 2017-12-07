@@ -19,9 +19,10 @@
     "webpack": "^3.10.0"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "postinstall": "webpack -p",
     "start": "node server.js",
+    "postinstall": "webpack -p",
+    "prod": "NODE_ENV=production node server.js",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
