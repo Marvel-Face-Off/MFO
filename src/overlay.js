@@ -29,7 +29,7 @@ class Overlay extends Component {
 						of their ability and should explain why they made their choice. After answering
 						the question, the player's turn is over and can chose the next person to answer the next question.
 					</p>
-					<img className="image1" alt="avengers image" />
+					<img className="image1" alt="marvel-vurses" />
 					<button
 						className="hover button"
 						onClick={() => this.quickHide()}>
