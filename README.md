@@ -14,7 +14,7 @@ $ npm start
 
 ## Deployment
 
-http://marvelfaceoff.surge.sh/
+https://marvel-face-off2.herokuapp.com/
 
 ## Rules
 
