@@ -7,7 +7,7 @@ An icebreaker game where players must answer sets of random questions choosing b
 
 ```bash
 $ git clone https://github.com/Marvel-Face-Off/MFO.git
-$ cd MFO/my-cool-app/
+$ cd MFO
 $ npm install
 $ npm start
 ```
