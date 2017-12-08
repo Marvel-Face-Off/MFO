@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "axios": "^0.17.1",
+    "express": "^4.16.2",
     "md5": "^2.2.1",
+    "path": "^0.12.7",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-load-image": "^0.1.5",
