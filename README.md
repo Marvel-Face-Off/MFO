@@ -51,12 +51,13 @@ $ npm start
 
 ## Technology Used
 
+<br>
 <img src="src/images/MarvelAPI.jpg" align="center" width="170" height="120" /><br>
 
 * [Marvel API](https://developer.marvel.com/) allows developers everywhere to access information about Marvel's vast library of comics.
 <br>
 
-<hr>
+<hr><br>
 
 <img src="src/images/react.png" align="center" width="170" height="150" /><br>
 
