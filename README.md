@@ -7,7 +7,9 @@
 
 # Marvel face Off
 
-An icebreaker game where players must answer sets of random questions choosing between two random Marvel characters generated from the Marvel API
+An icebreaker game where players must answer sets of random questions choosing between two random Marvel characters generated from the Marvel API.
+<br>
+Created by [Michael Haviv](https://github.com/mhaviv), [David Yim](https://github.com/yimd85) and [Jovan Williams](https://github.com/JWilliams35).
 
 ## Rules
 
