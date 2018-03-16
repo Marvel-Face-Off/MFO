@@ -20,7 +20,7 @@ If the two characters that appear are unknown, the person playing is allowed to 
 
 ## Deployment
 
-https://marvel-face-off2.herokuapp.com/
+https://marvel-face-off.herokuapp.com/
 
 <p>
 	<img src= "src/images/MarvelFaceoffSite.png" width="580" height="380">
