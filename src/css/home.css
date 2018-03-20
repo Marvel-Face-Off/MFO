@@ -4,8 +4,11 @@
   font-family: 'Boogaloo', cursive;
 	text-align: center;
   vertical-align: middle;
-  height: 100%;
-  width: 100%;
+  z-index: -99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .innerContainer {
@@ -51,6 +54,7 @@
 
 .overlayHide {
   visibility: hidden;
+  display: none;
   opacity: 0;
   transition: visibility 0.5s ease, opacity .90s ease;
 }
@@ -65,7 +69,7 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  margin-top: 5em;
+  padding-top: 5em;
   color: #BB1E08;
 }
 
@@ -112,4 +116,18 @@
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
+}
+
+@media (min-width: 320px) and (max-width: 420px){
+  .instructionsClick {
+    font-size: 3em;
+  }
+  
+  .playClick {
+    font-size: 3em;
+  }
+  
+  .introClick {
+    font-size: 3em;
+  }
 }
