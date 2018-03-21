@@ -4,8 +4,6 @@ import YoutubePlayer from 'react-youtube-player';
 import Header from './header.js';
 import { Link } from 'react-router-dom';
 
-
-
 class Home extends Component {
 	constructor() {
 		super()
@@ -17,72 +15,80 @@ class Home extends Component {
 	}
 	render() {
 		return(
-			<div
-				className="container"
-			>
-			<Header />
-				<div className={this.state.hideOverlay ? "innerContainer" : "innerContainerFade"}>
-					<YoutubePlayer
-						videoId='a1vWUe83LsQ'
-						className="player"
-						playbackState={this.state.playbackState}
-	  					onPause={() => this.handlePause()}
-	  					onPlay={() => this.handlePlay()}
-	  					configuration={
-	  						{
-	  							loop: 1,
-	  							rel: 0,
-	  							showinfo: 0,
-	  							controls: 0,
-	  							modestbranding: 1,
-	  							frameBorder: 0,
-	  							allowfullscreen: true
-	  						}
-	  					}
-					/>
-				</div>
+			<div className="homeContainer">
 				<div
-					className={this.state.hideOverlay ? "overlayHide" : "overlayShow"}
-					// onClick={this.toggleOverlay()}
+					className="container"
 				>
+				<Header />
+					<div className={this.state.hideOverlay ? "innerContainer" : "innerContainerFade"}>
+						<YoutubePlayer
+							videoId='a1vWUe83LsQ'
+							className="player"
+							playbackState={this.state.playbackState}
+							onPause={() => this.handlePause()}
+							onPlay={() => this.handlePlay()}
+							configuration={
+								{
+									loop: 1,
+									rel: 0,
+									showinfo: 0,
+									controls: 0,
+									modestbranding: 1,
+									frameBorder: 0,
+									allowfullscreen: true
+								}
+							}
+						/>
+					</div>
 					<div
-							className="hasBorder1"
-						>
-							<div
-								className="instructionsClick"
-								>
-								<Link
-									to="/overlay"
-									className="linkStyle"
+						className={this.state.hideOverlay ? "overlayHide" : "overlayShow"}
+						// onClick={this.toggleOverlay()}
+					>
+						<div>
+								<div
+									className="instructionsClick"
 									>
-									Instructions
+									<Link
+										to="/overlay"
+										className="linkStyle"
+										>
+										Instructions
+									</Link>
+								</div>
+							</div>
+								<div
+										className="hasBorder1 hasBorder2"
+								>
+										<div
+											className="playClick"
+										>
+								<Link
+									to="/faceoff"
+									className="linkStyle"
+								>
+									Play
 								</Link>
 							</div>
 						</div>
-							<div
-									className="hasBorder1 hasBorder2"
-							>
-									<div
-										className="playClick"
-									>
-							<Link
-								to="/faceoff"
-								className="linkStyle"
-							>
-								Play
-							</Link>
-						</div>
-					</div>
-					<div
-						className="hasBorder2"
-					>
 						<div
-							className="introClick"
-							onClick={() => this.handlePlay()}
+							className="hasBorder2"
 						>
-							Intro
+							<div
+								className="introClick"
+								onClick={() => this.handlePlay()}
+							>
+								Intro
+							</div>
 						</div>
 					</div>
+				</div>
+				<div className="footerContainer">
+					<Link
+						to="/overlay"
+						className="linkStyle footerStyle"
+					>
+						Play Now!
+					</Link>
 				</div>
 			</div>
 		)

@@ -118,7 +118,35 @@
   border-bottom: 0;
 }
 
-@media (min-width: 320px) and (max-width: 420px){
+.footerContainer {
+  font-family: 'Boogaloo', cursive;
+  margin-left: 2em;
+}
+
+.footerStyle {
+  font-size: 3em;
+  position: fixed;
+  bottom: 0;
+  margin-left: npx;
+  margin-bottom: 0.7em;
+  color: white;
+}
+
+@media (min-width: 530px) and (max-width: 720px){
+  .instructionsClick {
+    font-size: 4em;
+  }
+  
+  .playClick {
+    font-size: 4em;
+  }
+  
+  .introClick {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 530px){
   .instructionsClick {
     font-size: 3em;
   }
